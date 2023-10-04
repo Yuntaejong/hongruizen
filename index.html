@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>홍루이젠</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="./images/logo_favicon.ico" >
+  <!-- reset.css -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <!-- common.css -->
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+  <!-- PC ver.css -->
+  <link rel="stylesheet" href="./css/pc.css" type="text/css">
+  <!-- tablet ver.css -->
+  <link rel="stylesheet" href="./css/tablet.css" type="text/css">
+  <!-- mobile.css -->
+  <link rel="stylesheet" href="./css/mobile.css" type="text/css">
+  <!-- swiper slide -->
+  <link rel="stylesheet" href="./css/swiper.css" type="text/css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- google font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+  <!-- 접두사 자동으로 붙여주는 스크립트 -->
+  <script src="./script/prefixfree.min.js"></script>
+
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- 제이쿼리 UI 라이브러리 -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  
+  <!-- swiper 제이쿼리 -->
+  <script src="./script/swiper.js"></script>
+
+  <!-- 뉴스파트 스와이퍼 슬라이드 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  <!-- main script -->
+  <script src="./script/main.js"></script>
+</head>
+<body>
+  <!--aside bar-->
+  <aside>
+    <nav class="as_list">
+      <ul>
+        <li>
+          <a href="#h_menu" class="as_btn">
+            <img src="./images/aside/menu.png" alt="메뉴">
+            <span>Menu</span>
+          </a>
+        </li>
+        <li>
+          <a href="#h_find" class="as_btn">
+            <img src="./images/aside/find.png" alt="매장찾기">
+            <span>Find</span>
+          </a>
+        </li>
+        <li>
+          <a href="#h_news" class="as_btn">
+            <img src="./images/aside/news.png" alt="소식">
+            <span>News</span>
+          </a>
+        </li>
+        <li>
+          <a href="#h_video" class="as_btn">
+            <img src="./images/aside/video.png" alt="비디오">
+            <span>Video</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="as_btn">
+            <img src="./images/aside/top.png" alt="맨 위로 가기">
+            <span>Top</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  
+  <input type="checkbox" id="toggle">
+  <header>
+    <div class="h_top">
+      <h1>
+        <a href="#" title="메인페이지 바로가기">
+          <img src="./images/h1_logo.png" alt="홍루이젠">
+        </a>
+      </h1>
+      <nav class="lnb">
+        <ul>
+          <li>
+            <a href="#" title="">lOGIN</a>
+          </li>
+          <li>&#47;</li>
+          <li>
+            <a href="#" title="">JOIN</a>
+          </li>
+        </ul>
+      </nav>
+    </div><!--//End .h_top-->
+
+    <!-- 전체메뉴 아이콘 -->
+    <label for="toggle" class="fas fa-bars"></label>
+
+    <!-- 회원가입 / 로그인 아이콘 -->
+    <i class="fas fa-user"></i>
+    <i class="fas fa-user-plus"></i>
+
+    
+    <div class="h_bottom">
+      <nav class="gnb">
+        <div>
+          <img src="./images/h1_logo.png" alt="로고">
+        </div>
+        <ul>
+          <li>
+            <a href="#" title="브랜드 소개">브랜드 소개
+              <ul class="sub">
+                <li><a href="#" title="홍루이젠 소개">홍루이젠 소개</a></li>
+                <li><a href="#" title="브랜드 철학">브랜드 철학</a></li>
+                <li><a href="#" title="히스토리">히스토리</a></li>
+              </ul>
+            </a>
+          </li>
+          <li>
+            <a href="#" title="브랜드관">브랜드관
+              <ul class="sub">
+                <li><a href="#" title="브랜드관">브랜드관</a></li>
+              </ul>
+            </a>
+          </li>
+          <li>
+            <a href="#" title="메뉴">메뉴
+              <ul class="sub">
+                <li><a href="#" title="전체">전체</a></li>
+                <li><a href="#" title="신제품">신제품</a></li>
+                <li><a href="#" title="소프트 샌드위치">소프트 샌드위치</a></li>
+                <li><a href="#" title="갓군샌">갓군샌</a></li>
+                <li><a href="#" title="프레시 샌드위치">프레시 샌드위치</a></li>
+                <li><a href="#" title="디저트">디저트</a></li>
+                <li><a href="#" title="음료">음료</a></li>
+              </ul>
+            </a>
+          </li>
+          <li>
+            <a href="#" title="매장 안내">매장 안내
+              <ul class="sub">
+                <li><a href="#" title="매장 찾기">매장 찾기</a></li>
+                <li><a href="#" title="단체 주문">단체 주문</a></li>
+                <li><a href="#" title="창업 안내">창업 안내</a></li>
+              </ul>
+            </a>
+          </li>
+          <li>
+            <a href="#" title="커뮤니티">커뮤니티
+              <ul class="sub">
+                <li><a href="#" title="홍루이젠 소식">홍루이젠 소식</a></li>
+                <li><a href="#" title="프레스센터">프레스센터</a></li>
+                <li><a href="#" title="이벤트">이벤트</a></li>
+                <li><a href="#" title="고객의 소리">고객의 소리</a></li>
+              </ul>
+            </a>
+          </li>
+          <li>
+            <a href="#" title="쇼핑하기">쇼핑하기
+              <ul class="sub">
+                <li><a href="#" title="쇼핑하기">쇼핑하기</a></li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="m_lnb">
+        <li><a href="#" title="환경설정"><img src="./images/setting.png" alt="환경설정"></a></li>
+        <li><a href="#" title="로그인"><img src="./images/user.png" alt=""></a></li>
+        <li><a href="#" title="고객센터"><img src="./images/headset.png" alt=""><span>고객센터</span></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 메인콘텐츠영역 시작 -->
+  <main>
+    <!-- 이미지 슬라이드 -->
+    <article class="m_slide">
+      <h2 class="hidden">메인슬라이드</h2>
+      <div class="swiper-container main-slide">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" title="메인이미지1">
+                <img src="./images/main_img1.png" alt="메인이미지1">
+              </a>
+              <div class="news_sub">
+                <p>&#35;홍루이젠_할인</p>
+                <p>전품목 10% 할인!</p>
+                <p>12,000원 구매 시, 10% 즉시 할인</p>
+                <a href="#">READ MORE <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          <div class="swiper-slide">
+            <a href="#" title="메인이미지2">
+              <img src="./images/main_img2.jpg" alt="메인이미지2">
+            </a>
+            <div class="news_sub">
+              <p>&#35;홍루이젠_NEW MENU</p>
+              <p>요거베리 샌드위치 &amp; 요거피치 샌드위치</p>
+              <p>MZ세대 사이에서 열풍인 ‘헬시플레저’ 트랜드와 건강하게 한 끼!</p>
+              <a href="#">READ MORE <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" title="메인이미지2">
+              <img src="./images/main_img3.jpg" alt="메인이미지2">
+            </a>
+            <div class="news_sub">
+              <p>&#35;홍루이젠 창업 안내</p>
+              <p>누구나 가능한 소자본 창업 안내</p>
+              <p>비수기 없는 안정적인 , 샌드위치!</p>
+              <a href="#">READ MORE <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div> <!-- //End .swiper-wrapper -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div> <!-- //End .swiper container-->
+    </article>
+
+    <section class="menu_wrap" id="h_menu">
+      <h2>menu</h2>
+      <p>당일 들어온 <span class="emphasis">신선한 재료</span>로 맛을 사로 잡다</p>
+      <p>특별 출시 샌드위치!</p>
+
+      <input type="radio" id="tab01" name="m" checked>
+      <label for="tab01">신제품</label>
+
+      <input type="radio" id="tab02" name="m">
+      <label for="tab02">프레쉬 샌드위치</label>
+
+      <input type="radio" id="tab03" name="m">
+      <label for="tab03">갓군샌</label>
+
+      <input type="radio" id="tab05" name="m">
+      <label for="tab05">디저트</label>
+
+      <input type="radio" id="tab04" name="m">
+      <label for="tab04">소프트 샌드위치</label>
+
+      <input type="radio" id="tab06" name="m">
+      <label for="tab06">드링크</label>
+
+      <ul class="menu">
+        <li class="menu_tap list01">
+          <ul class="menu_list">
+            <li>
+              <a href="#" title="요거피치 샌드위치">
+                <img src="./images/m_yogerpeach.png" alt="요거피치 샌드위치">
+                <p>요거피치 샌드위치</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="요거베리 샌드위치">
+                <img src="./images/m_yogerberry.png" alt="요거베리 샌드위치">
+                <p>요거베리 샌드위치</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="슈크림퐁당 샌드위치">
+                <img src="./images/m_puffcreampongdang.png" alt="슈크림퐁당 샌드위치">
+                <p>슈크림퐁당 샌드위치</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="우유퐁당 케익샌드 초코">
+                <img src="./images/m_chocopongdang.png" alt="우유퐁당 케익샌드 초코">
+                <p>우유퐁당 케익샌드 초코</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu_tap list02">
+          <ul class="menu_list">
+            <li>
+              <a href="#" title="요거피치 샌드위치">
+                <img src="./images/m_yogerpeach.png" alt="요거피치 샌드위치">
+                <p>요거피치 샌드위치</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="요거베리 샌드위치">
+                <img src="./images/m_yogerberry.png" alt="요거베리 샌드위치">
+                <p>요거베리 샌드위치</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="슈크림퐁당 샌드위치">
+                <img src="./images/m_puffcreampongdang.png" alt="슈크림퐁당 샌드위치">
+                <p>슈크림퐁당 샌드위치</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="오리지널 햄 샌드위치">
+                <img src="./images/m_ori_hamcheeze.png" alt="오리지널 햄 샌드위치">
+                <p>오리지널 햄 샌드위치</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu_tap list03">
+          <ul class="menu_list">
+            <li>
+              <a href="#" title="갓군샌 갈릭버터">
+                <img src="./images/m_ggs_gralic.png" alt="요거피치 샌드위치">
+                <p>갓군샌 갈릭버터</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="갓군샌 트리플치즈">
+                <img src="./images/m_ggs_tcheeze.png" alt="요거베리 샌드위치">
+                <p>갓군샌 트리플치즈</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="갓군샌 눈꽃소보루">
+                <img src="./images/m_ggs_snow.png" alt="슈크림퐁당 샌드위치">
+                <p>갓군샌 눈꽃소보루</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="홍루이젠 잠봉뵈르">
+                <img src="./images/m_zambong.png" alt="오리지널 햄 샌드위치">
+                <p>홍루이젠 잠봉뵈르</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu_tap list04">
+          <ul class="menu_list">
+            <li>
+              <a href="#" title="에그 맛살 샌드위치">
+                <img src="./images/m_eggcrab.png" alt="요거피치 샌드위치">
+                <p>에그 맛살 샌드위치</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="에그 참치마요 샌드위치">
+                <img src="./images/m_eggtuna.png" alt="요거베리 샌드위치">
+                <p>에그 참치마요 샌드위치</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="에그 포테이토 샌드위치">
+                <img src="./images/m_eggpotato.png" alt="슈크림퐁당 샌드위치">
+                <p>에그 포테이토 샌드위치</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu_tap list05">
+          <ul class="menu_list">
+            <li>
+              <a href="#" title="우유퐁당 케익샌드 초코">
+                <img src="./images/m_chocopongdang.png" alt="우유퐁당 케익샌드 초코">
+                <p>우유퐁당 케익샌드 초코</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="우유퐁당 케익샌드 플레인">
+                <img src="./images/m_milkcakeplain.png" alt="우유퐁당 케익샌드 플레인">
+                <p>우유퐁당 케익샌드 플레인</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="리얼펑리슈">
+                <img src="./images/m_realpung.png" alt="리얼펑리슈">
+                <p>리얼펑리슈</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="체다치즈 크로플">
+                <img src="./images/m_croplecheeze.png" alt="체다치즈 크로플">
+                <p>체다치즈 크로플</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu_tap list06">
+          <ul class="menu_list">
+            <li>
+              <a href="#" title="레몬 스파클링 에이드">
+                <img src="./images/m_lemonsparkling.png" alt="레몬 스파클링 에이드">
+                <p>레몬 스파클링 에이드</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="바닐라 글레이즈드 라떼">
+                <img src="./images/m_glazedlatte.png" alt="바닐라 글레이즈드 라떼">
+                <p>바닐라 글레이즈드 라떼</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="레몬 홍차">
+                <img src="./images/m_lemon_can.png" alt="레몬 홍차">
+                <p>레몬 홍차</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="복숭아 아이스티">
+                <img src="./images/m_picetea.png" alt="복숭아 아이스티">
+                <p>복숭아 아이스티</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <a href="#" title="전체 메뉴보기" class="btn">
+        <span>전체 메뉴 보기</span>
+        <span class="material-symbols-outlined">chevron_right</span>
+      </a>
+    </section> <!--//End .menu-->
+
+    <section class="find_wrap" id="h_find">
+      <h2>find</h2>
+      <p>내 주변에 <span class="emphasis">홍루이젠</span>이 어디 있는지 알아보세요!</p>
+      <p>찾고! 또 가고 싶은 매장은 하트 꾸욱!</p>
+      <ul class="find">
+        <li class="find_map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25295.1344912405!2d126.98956204999999!3d37.5811652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1687824918041!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>찾으시는 매장을 지도에서 클릭하시면 자세히 볼 수 있습니다.</p>
+        </li>
+        <li class="find_list">
+          <div class="search">
+            <input type="text" placeholder="ex)논현역">
+            <span>검색</span>
+          </div>
+          <ul class="store_list">
+            <li>
+              <a href="#" title="">
+                <ul class="store">
+                  <li>
+                    <img src="./images/store_img1.jpg" alt="">
+                  </li>
+                  <li>
+                    <h3>홍루이젠 논현점</h3>
+                    <p><strong>주소</strong> &nbsp;서울특별시 강남구 논현동 242-52번지 103 105호</p>
+                    <p><strong>영업시간</strong> &nbsp;24시간</p>
+                    <p><strong>운영유형</strong> &nbsp;무인판매점</p>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="">
+                <ul class="store">
+                  <li>
+                    <img src="./images/store_img2.jpg" alt="">
+                  </li>
+                  <li>
+                    <h3>홍루이젠 아현점</h3>
+                    <p><strong>주소</strong> &nbsp;서울특별시 중구 흥인동 다산로 263-1</p>
+                    <p><strong>영업시간</strong> &nbsp;09:30 ~ 20:30</p>
+                    <p><strong>운영유형</strong> &nbsp;일반매장</p>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="">
+                <ul class="store">
+                  <li>
+                    <img src="./images/store_img3.jpg" alt="">
+                  </li>
+                  <li>
+                    <h3>홍루이젠 대흥역점</h3>
+                    <p><strong>주소</strong> &nbsp;서울특별시 마포구 염리동 백범로 115</p>
+                    <p><strong>영업시간</strong> &nbsp;07:30 ~ 22:00</p>
+                    <p><strong>운영유형</strong> &nbsp;일반매장</p>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="">
+                <ul class="store">
+                  <li>
+                    <img src="./images/store_img4.png" alt="">
+                  </li>
+                  <li>
+                    <h3>홍루이젠 마포역점</h3>
+                    <p><strong>주소</strong> &nbsp;서울특별시 마포구 도화동 563번지 아크로타워</p>
+                    <p><strong>영업시간</strong> &nbsp;07:30 ~ 22:00</p>
+                    <p><strong>운영유형</strong> &nbsp;일반매장</p>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="">
+                <ul class="store">
+                  <li>
+                    <img src="./images/store_img5.png" alt="">
+                  </li>
+                  <li>
+                    <h3>홍루이젠 흑석중앙대점</h3>
+                    <p><strong>주소</strong> &nbsp;서울특별시 동작구 흑석동 흑석로 115</p>
+                    <p><strong>영업시간</strong> &nbsp;07:30 ~ 22:00</p>
+                    <p><strong>운영유형</strong> &nbsp;일반매장</p>
+                  </li>
+                </ul>
+              </a>
+            </li>
+          </ul> <!--//End .store_list-->
+        </li>
+      </ul> <!-- //End .find-->
+    </section> <!-- //End .find_wrap-->
+
+    <section class="news_wrap" id="h_news">
+      <h2>EVENT&amp;NEWS</h2>
+      <p>다양한 <span class="emphasis">홍루이젠</span>이 어디 있는지 알아보세요!</p>
+      <p>찾고! 또 가고 싶은 매장은 하트 꾸욱!</p>
+      <article>
+        <h3 class="hidden">이벤트,뉴스 리스트</h3>
+        <swiper-container class="mySwiper news" pagination="true" pagination-clickable="true" space-between="0"
+        slides-per-view="4">
+          <swiper-slide>
+            <a href="#" title="소비자패널 모집">
+              <img src="./images/e&n_img8.jpg" alt="소비자패널 모집">
+              <h3>[소비자패널 4기모집]</h3>
+              <div class="desc">
+                <p>홍루이젠 메뉴에 도움을 주세요!</p>
+                <p>기간 : 23.06.19 ~ 23.07.19</p>
+              </div>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="#" title="이달의 신메뉴">
+              <img src="images/e&n_img1.jpg" alt="이달의 신메뉴">
+              <h3>[이달의 新메뉴]</h3>
+              <div class="desc">
+                <p>따끈따끈한 신메뉴를 확인해보세요!</p>
+                <p>지금 바로 확인해보세요!</p>
+              </div>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="#" title="네이버페이">
+              <img src="./images/e&n_img10.jpg" alt="네이버페이">
+              <h3>[홍루이젠 X 네이버페이]</h3>
+              <div class="desc">
+                <p>네이버 페이로 결제하면! 혜택이?!</p>
+                <p>기간 : 23.06.22 ~ 23.08.19</p>
+              </div>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="#" title="새해맞이 이벤트">
+              <img src="./images/e&n_img11.jpg" alt="새해맞이 이벤트">
+              <h3>[새해맞이 이벤트]</h3>
+              <div class="desc">
+                <p>지금 구매 시 10%할인 or 음료증정!</p>
+                <p>기간 : 23.01.22 ~ 23.02.19</p>
+              </div>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="#" title="신제품 인증샷 이벤트">
+              <img src="./images/e&n_img4.jpg" alt="신제품 인증샷 이벤트">
+              <h3>[신제품 인증샷 이벤트]</h3>
+              <div class="desc">
+                <p>신제품 먹고 인증샷올리면 경품 증정!</p>
+                <p>기간 : 23.01.22 ~ 23.02.19</p>
+              </div>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="#" title="메뉴 업그레이드">
+              <img src="./images/e&n_img7.jpg" alt="메뉴 업그레이드">
+              <h3>[홍루이젠 메뉴 UPGRADE!]</h3>
+              <div class="desc">
+                <p>속은 든든하게! 칼로리는 가볍게!</p>
+                <p>지금 바로 확인해보세요!</p>
+              </div>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="#" title="호밀빵햄치즈 출시">
+              <img src="./images/e&n_img6.jpg" alt="호밀빵햄치즈 출시">
+              <h3>[호밀빵 햄치즈 출시!]</h3>
+              <div class="desc">
+                <p>건강하고 가볍게 즐겨보세요!</p>
+                <p>지금 바로 확인해보세요!</p>
+              </div>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="#" title="고물가 시대 극-복 프로젝트!">
+              <img src="./images/e&n_img2.jpg" alt="고물가 시대 극-복 프로젝트!">
+              <h3>[고물가 시대 극-복 프로젝트!]</h3>
+              <div class="desc">
+                <p>5,000원이상 구매 시 10%할인!</p>
+                <p>기간 : 23.04.22 ~ 23.05.19</p>
+              </div>
+            </a>
+          </swiper-slide>
+        </swiper-container>
+      </article>
+      <a href="#" title="전체 메뉴보기" class="btn">
+        <span>전체 소식 보기</span>
+        <span class="material-symbols-outlined">chevron_right</span>
+      </a>
+    </section> <!-- //End .news_wrap -->
+
+    <section class="video_wrap" id="h_video">
+      <h2>HONGRUIZHEN VIDEO</h2>
+      <p>홍루이젠의 새 소식을 <span class="emphasis">영상</span>으로 알아보세요!</p>
+      <p>찾고! 또 가고 싶은 매장은 하트 꾸욱!</p>
+      <a href="#" title="전체 메뉴보기" class="btn">
+        <span>전체 영상 보기</span>
+        <span class="material-symbols-outlined">chevron_right</span>
+      </a>
+      <div class="video_main">
+        <iframe src="https://www.youtube.com/embed/Beh2_OHMIBQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="video_sub">
+          <img src="./images/VIDED_label.png" alt="#">
+          <p>오늘의 샌드위치<br>
+            베이커리 홍루이젠</p>
+          <iframe src="https://www.youtube.com/embed/S82wJ0DGFGI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/VTTkU4SReM8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section> <!-- //End .video_wrap -->
+  </main>
+
+  <footer>
+    <div class="f_top">
+      <img src="./images/f_logo.png" alt="로고">
+      <address>
+        <p>(주)타이웨이 대표이사 :<br>
+          송원섭주소 : 경기도 고양시 덕양구 삼송로 12 반도유스퀘어 701,702호
+        </p>
+        <p>
+          사업자등록번호 :<br>
+          730-86-00779 가맹문의 대표번호 : 1566-8025
+        </p>
+      </address>
+      <div class="sns">
+        <a href="">인스타그램</a>
+        <a href="">구글</a>
+        <a href="">페이스북</a>
+      </div>
+    </div> <!--//End .f_top-->
+    <div class="f_bottom">
+      <p>Copyright&copy;HONG RUI CHEN CORP All right reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- main swiper slide -->
+  <script>
+    var swiper = new Swiper(".main-slide", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable : true,
+      },
+      mousewheel: true,
+      keyboard: true,
+      loop : true, 
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      }
+    });
+  </script>
+</body>
+</html>
