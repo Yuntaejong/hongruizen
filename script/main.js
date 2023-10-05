@@ -8,6 +8,10 @@ $(document).ready(function(){
   })
   // gnb 클릭 이벤트
   $('.gnb > ul > li').click(function(){
-    $(this).find('.sub').slideToggle(300);
-  })
+    var width = $(window).width();
+    console.log(width);
+    if(width <767){
+      $(this).find('.sub').slideToggle(300);
+    }
+  });
 });
