@@ -198,13 +198,13 @@
     overflow-x: scroll;
     margin: 0 auto;
   }
-  .menu > .menu_tap::-webkit-scrollbar {
+  /* .menu > .menu_tap::-webkit-scrollbar {
     height: 10px;
   }
   .menu > .menu_tap::-webkit-scrollbar-track{
     border-radius: 40px;
     background-color: var(--sub-color1);
-  }
+  } */
   .menu_list{
     justify-content: start;
     margin-top:50px;
