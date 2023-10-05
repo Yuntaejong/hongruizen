@@ -43,7 +43,7 @@ p {
 ::selection {
   opacity: 0;
 }
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
 }
 .store_list::-webkit-scrollbar {
@@ -56,9 +56,9 @@ p {
 .store_list::-webkit-scrollbar-scrollbar-thumb {
   border-radius: 40px;
   background-color: var(--main-color);
-} */
+}
 /* Menu 스크롤 디자인 */
-/* .menu_list::-webkit-scrollbar {
+.menu_list::-webkit-scrollbar {
   height: 10px;
 }
 
@@ -69,7 +69,7 @@ p {
 ::-webkit-scrollbar-thumb {
   border-radius: 40px;
   background-color: var(--main-color);
-} */
+}
 
 /* swiper-button */
 .main-slide > .swiper-button-next, .main-slide > .swiper-button-prev{
@@ -86,7 +86,7 @@ p {
 .swiper-pagination-bullet-active {
   /* width: 40px !important; */
   border-radius: 10px !important;
-  /* -webkit-animation:ex1 3s forwards !important; */
+  -webkit-animation:ex1 3s forwards !important;
   animation : ex1 3s forwards !important;
 }
 /* 전체메뉴 아이콘 숨기기 */
